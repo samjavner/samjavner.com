@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+  <head>
+    <meta name="description" content="Silver Bullet Cookbook recipe software for Windows. Recipe management and meal planning made easy!">
+    <meta name="keywords" content="recipe software, recipe manager, meal planning">
+    <meta charset="utf-8">
+    <title>Silver Bullet Cookbook | {{ title }}</title>
+    <link type="image/png" rel="icon" href="/images/icon.png">
+    <link type="text/css" rel="stylesheet" href="/stylesheets/main.css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="wholepage">
+        <div id="header">
+          <div id="headerlogo">
+            <a href="index.htm"><img src="/images/pan.png" alt="Silver Bullet Cookbook" /></a>
+          </div>
+          <div id="headertitle">
+            Silver Bullet Cookbook
+            <div id="headersubtitle">
+                Recipe management and meal planning made easy!
+            </div>
+          </div>
+          <div id="headerdownload">
+            <a href="download.htm" class="downloadlink" alt="TRY IT NOW for free!" title="TRY IT NOW for free!"></a>
+          </div>
+          <div id="headerpurchase">
+            <a href="https://sites.fastspring.com/silverbulletsoftware/instant/silverbulletcookbook" class="purchaselink" alt="PURCHASE registration key" title="PURCHASE registration key"></a>
+          </div>
+          <div id="headermenu">
+            <ul>
+                <li><a href="/" title="Home">Home</a></li>
+                <li><a href="/download" title="Download">Download</a></li>
+                <li><a href="https://sites.fastspring.com/silverbulletsoftware/instant/silverbulletcookbook" title="Purchase">Purchase</a></li>
+                <li><a href="/contact" title="Contact">Contact</a></li>
+                <li><a href="/help" title="Help">Help</a></li>
+            </ul>
+          </div>
+          <div id="headerfollow">
+            <!-- AddThis Follow BEGIN -->
+            <div class="addthis_toolbox addthis_default_style">
+              <a class="addthis_button_facebook_follow" addthis:userid="SilverBulletCookbook"></a>
+              <a class="addthis_button_twitter_follow" addthis:userid="SBCookbook"></a>
+              <a class="addthis_button_pinterest_follow" addthis:userid="sbcookbook"></a>
+            </div>
+            <!-- AddThis Follow END -->
+          </div>
+        </div>
+        <div id="content">
+          <div id="innercontent">
+            {% block body %}
+            {% endblock %}
+          </div>
+        </div>
+      </div>
+      <div id="copyright">
+        &copy; 2014 Silver Bullet Software
+      </div>
+    </div>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-517adb493ca21731"></script>
+  </body>
+</html>
+{% endautoescape %}
