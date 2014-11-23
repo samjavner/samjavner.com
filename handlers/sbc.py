@@ -12,3 +12,8 @@ class Index(BaseHandler):
 
     def get(self):
         self.render_template(TEMPLATE_FOLDER, 'index.html')
+
+class Download(BaseHandler):
+
+	def get(self):
+		self.render_template(TEMPLATE_FOLDER, 'download.html')
