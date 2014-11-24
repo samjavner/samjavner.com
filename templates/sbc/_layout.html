@@ -35,24 +35,25 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">Sam Javner</a>
+          <a class="navbar-brand" href="{{ handler.uri_for('sbc-index') }}">Silver Bullet Cookbook</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
           {% if page == 'index' %}
-            <li class="active"><a href="{{ handler.uri_for('sbc-index') }}"><img src="/static/sbc/images/icon.png" width="16" height="16" style="margin-right:8px;">Silver Bullet Cookbook</a></li>
+            <li class="active"><a href="{{ handler.uri_for('sbc-index') }}"><img src="/static/sbc/images/icon.png" width="16" height="16" style="margin-right:8px;">Home</a></li>
             <li><a href="{{ handler.uri_for('sbc-features') }}">Features</a></li>
             <li><a href="{{ handler.uri_for('sbc-download') }}">Download</a></li>
           {% elif page == 'features' %}
-            <li><a href="{{ handler.uri_for('sbc-index') }}"><img src="/static/sbc/images/icon.png" width="16" height="16" style="margin-right:8px;">Silver Bullet Cookbook</a></li>
+            <li><a href="{{ handler.uri_for('sbc-index') }}"><img src="/static/sbc/images/icon.png" width="16" height="16" style="margin-right:8px;">Home</a></li>
             <li class="active"><a href="{{ handler.uri_for('sbc-features') }}">Features</a></li>
             <li><a href="{{ handler.uri_for('sbc-download') }}">Download</a></li>
           {% elif page == 'download' %}
-            <li><a href="{{ handler.uri_for('sbc-index') }}"><img src="/static/sbc/images/icon.png" width="16" height="16" style="margin-right:8px;">Silver Bullet Cookbook</a></li>
+            <li><a href="{{ handler.uri_for('sbc-index') }}"><img src="/static/sbc/images/icon.png" width="16" height="16" style="margin-right:8px;">Home</a></li>
             <li><a href="{{ handler.uri_for('sbc-features') }}">Features</a></li>
             <li class="active"><a href="{{ handler.uri_for('sbc-download') }}">Download</a></li>
           {% endif %}
             <li><a href="http://pinterest.com/sbcookbook/" target="_blank">Pinterest</a></li>
+            <li><a href="/">Sam Javner</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
