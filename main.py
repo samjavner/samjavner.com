@@ -11,6 +11,7 @@ app = WSGIApplication([
     Route('/', home.Index, name='home-index'),
     Route('/projects/', projects.Index, name='projects-index'),
     RedirectRoute('/projects', redirect_to_name='projects-index'),
+    Route('/projects/guid/', projects.Guid, name='projects-guid'),
     Route('/silverbulletcookbook/', sbc.Index, name='sbc-index'),
     RedirectRoute('/silverbulletcookbook', redirect_to_name='sbc-index'),
     Route('/silverbulletcookbook/features', sbc.Features, name='sbc-features'),

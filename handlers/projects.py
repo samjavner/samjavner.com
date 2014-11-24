@@ -15,3 +15,12 @@ class Index(BaseHandler):
             'page': 'projects'
         }
         self.render_template(TEMPLATE_FOLDER, 'index.html', template_values)
+
+
+class Guid(BaseHandler):
+
+    def get(self):
+        template_values = {
+            'page': 'projects'
+        }
+        self.render_template(TEMPLATE_FOLDER, 'guid.html', template_values)

@@ -11,35 +11,43 @@
 {% block body %}
 
 <div class="row" id="projects">
-  <div class="col-sm-3 col-xs-6" data-tags="VB.NET,C#,.NET,WPF,XAML,SQLite">
+  <div class="col-sm-3 col-xs-6 project-badge" data-tags="VB.NET,C#,.NET,WPF,XAML,SQLite">
     <p class="text-center">
-      <a href="{{ handler.uri_for('sbc-index') }}" target="_blank">
+      <a href="{{ handler.uri_for('sbc-index') }}">
         <img src="/static/projects/images/silver-bullet-cookbook.png">
         <h5 class="text-center">Silver Bullet Cookbook</h5>
       </a>
     </p>
   </div>
-  <div class="col-sm-3 col-xs-6" data-tags="C#,.NET,Windows Phone,XAML">
+  <div class="col-sm-3 col-xs-6 project-badge" data-tags="C#,.NET,Windows Phone,XAML">
     <p class="text-center">
-      <a href="http://www.windowsphone.com/en-us/store/app/recipe-viewer/388e503e-8c58-46aa-a028-5057715364f5" target="_blank">
+      <a href="http://www.windowsphone.com/en-us/store/app/recipe-viewer/388e503e-8c58-46aa-a028-5057715364f5">
         <img src="/static/projects/images/recipe-viewer.png">
         <h5 class="text-center">Recipe Viewer</h5>
       </a>
     </p>
   </div>
-  <div class="col-sm-3 col-xs-6" data-tags="C#,.NET,Windows Phone,XAML">
+  <div class="col-sm-3 col-xs-6 project-badge" data-tags="C#,.NET,Windows Phone,XAML">
     <p class="text-center">
-      <a href="http://www.windowsphone.com/en-us/store/app/voice-unit-converter/ccf01b22-8de5-4ca9-9fc9-a3b00732711c" target="_blank">
+      <a href="http://www.windowsphone.com/en-us/store/app/voice-unit-converter/ccf01b22-8de5-4ca9-9fc9-a3b00732711c">
         <img src="/static/projects/images/voice-unit-converter.png">
         <h5 class="text-center">Voice Unit Converter</h5>
       </a>
     </p>
   </div>
-  <div class="col-sm-3 col-xs-6" data-tags="Python,Google App Engine,HTML5,CSS,JavaScript,Bootstrap">
+  <div class="col-sm-3 col-xs-6 project-badge" data-tags="Python,Google App Engine,HTML5,CSS,JavaScript,Bootstrap">
     <p class="text-center">
-      <a href="http://www.samjavner.com" target="_blank">
+      <a href="http://www.samjavner.com">
         <img src="/static/projects/images/sam-javner.png">
         <h5 class="text-center">samjavner.com</h5>
+      </a>
+    </p>
+  </div>
+  <div class="col-sm-3 col-xs-6 project-badge" data-tags="C#,.NET">
+    <p class="text-center">
+      <a href="{{ handler.uri_for('projects-guid') }}">
+        <img src="/static/projects/images/guid.png">
+        <h5 class="text-center">GUID Generator</h5>
       </a>
     </p>
   </div>
