@@ -4,12 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Silver Bullet Cookbook recipe software for Windows. Recipe management and meal planning made easy!">
-    <meta name="keywords" content="recipe software, recipe manager, meal planning">
     <meta name="author" content="Sam Javner">
-    <link type="image/png" rel="icon" href="/static/sbc/images/icon.png">
+    <link type="image/png" rel="icon" href="/static/favicon.png">
 
-    <title>Silver Bullet Cookbook</title>
+    <title>Sam Javner</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -41,10 +39,10 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
           {% if page == 'home' %}
-            <li class="active"><a href="{{ handler.uri_for('home-index') }}">Home</a></li>
+            <li class="active"><a href="{{ handler.uri_for('home-index') }}"><img src="/static/favicon.png" width="16" height="16" style="margin-right:8px;">Home</a></li>
             <li><a href="{{ handler.uri_for('projects-index') }}">Projects</a></li>
           {% elif page == 'projects' %}
-            <li><a href="{{ handler.uri_for('home-index') }}">Home</a></li>
+            <li><a href="{{ handler.uri_for('home-index') }}"><img src="/static/favicon.png" width="16" height="16" style="margin-right:8px;">Home</a></li>
             <li class="active"><a href="{{ handler.uri_for('projects-index') }}">Projects</a></li>
           {% endif %}
           </ul>
