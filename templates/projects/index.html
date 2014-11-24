@@ -3,38 +3,51 @@
 
 <div class="jumbotron">
   <div class="container">
-    <h1>Projects</h1>
+    <div id="buttons"></div>
   </div>
 </div>
 
 {% endblock %}
 {% block body %}
 
-<div class="row">
-  <div class="col-med-3 col-sm-4 col-xs-6">
+<div class="row" id="projects">
+  <div class="col-sm-3 col-xs-6" data-tags="VB.NET,C#,.NET,WPF,XAML,SQLite">
     <p class="text-center">
       <a href="{{ handler.uri_for('sbc-index') }}" target="_blank">
         <img src="/static/projects/images/silver-bullet-cookbook.png">
-        <h4 class="text-center">Silver Bullet Cookbook</h4>
+        <h5 class="text-center">Silver Bullet Cookbook</h5>
       </a>
     </p>
   </div>
-  <div class="col-med-3 col-sm-4 col-xs-6">
+  <div class="col-sm-3 col-xs-6" data-tags="C#,.NET,Windows Phone,XAML">
     <p class="text-center">
       <a href="http://www.windowsphone.com/en-us/store/app/recipe-viewer/388e503e-8c58-46aa-a028-5057715364f5" target="_blank">
         <img src="/static/projects/images/recipe-viewer.png">
-        <h4 class="text-center">Recipe Viewer</h4>
+        <h5 class="text-center">Recipe Viewer</h5>
       </a>
     </p>
   </div>
-  <div class="col-med-3 col-sm-4 col-xs-6">
+  <div class="col-sm-3 col-xs-6" data-tags="C#,.NET,Windows Phone,XAML">
     <p class="text-center">
       <a href="http://www.windowsphone.com/en-us/store/app/voice-unit-converter/ccf01b22-8de5-4ca9-9fc9-a3b00732711c" target="_blank">
         <img src="/static/projects/images/voice-unit-converter.png">
-        <h4 class="text-center">Voice Unit Converter</h4>
+        <h5 class="text-center">Voice Unit Converter</h5>
+      </a>
+    </p>
+  </div>
+  <div class="col-sm-3 col-xs-6" data-tags="Python,Google App Engine,HTML5,CSS,JavaScript,Bootstrap">
+    <p class="text-center">
+      <a href="http://www.samjavner.com" target="_blank">
+        <img src="/static/projects/images/sam-javner.png">
+        <h5 class="text-center">samjavner.com</h5>
       </a>
     </p>
   </div>
 </div>
+
+{% endblock %}
+{% block scripts %}
+
+<script src="/static/projects/js/filter-tags.js"></script>
 
 {% endblock %}
