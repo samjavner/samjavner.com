@@ -14,5 +14,6 @@ class MainHandler(webapp2.RequestHandler):
 app = WSGIApplication([
     Route('/', MainHandler, name='home'),
     Route('/silverbulletcookbook', sbc.Index, name='sbc-index'),
+    Route('/silverbulletcookbook/features', sbc.Features, name='sbc-features'),
     Route('/silverbulletcookbook/download', sbc.Download, name='sbc-download'),
-], debug=True)
+], debug=False)
