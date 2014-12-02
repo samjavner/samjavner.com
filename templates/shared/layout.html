@@ -35,7 +35,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="{{ handler.uri_for('home-index') }}">Sam Javner</a>
+          <a class="navbar-brand" href="{{ handler.uri_for('projects-index') }}">Sam Javner</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -43,8 +43,7 @@
             <li class="active"><a href="{{ handler.uri_for('home-index') }}"><img src="/static/favicon.png" width="16" height="16" style="margin-right:8px;">Home</a></li>
             <li><a href="{{ handler.uri_for('projects-index') }}">Projects</a></li>
           {% elif page == 'projects' %}
-            <li><a href="{{ handler.uri_for('home-index') }}"><img src="/static/favicon.png" width="16" height="16" style="margin-right:8px;">Home</a></li>
-            <li class="active"><a href="{{ handler.uri_for('projects-index') }}">Projects</a></li>
+            <li class="active"><a href="{{ handler.uri_for('projects-index') }}"><img src="/static/favicon.png" width="16" height="16" style="margin-right:8px;">Projects</a></li>
           {% endif %}
           </ul>
         </div><!--/.nav-collapse -->

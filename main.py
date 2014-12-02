@@ -8,7 +8,7 @@ from webapp2_extras.routes import RedirectRoute
 from handlers import home, projects, sbc
 
 app = WSGIApplication([
-    Route('/', home.Index, name='home-index'),
+    RedirectRoute('/', redirect_to_name='projects-index'),
     Route('/projects/', projects.Index, name='projects-index'),
     RedirectRoute('/projects', redirect_to_name='projects-index'),
     Route('/projects/guid/', projects.Guid, name='projects-guid'),
