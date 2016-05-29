@@ -7267,7 +7267,7 @@ var _sam_javner$sam_javner$Page$footerView = A2(
 		[
 			_elm_lang$html$Html$text('© 2016 Sam Javner')
 		]));
-var _sam_javner$sam_javner$Page$customNavbarView = F3(
+var _sam_javner$sam_javner$Page$navbarView = F3(
 	function (headingHref, headingText, links) {
 		return A2(
 			_elm_lang$html$Html$div,
@@ -7306,8 +7306,74 @@ var _sam_javner$sam_javner$Page$customNavbarView = F3(
 						]))
 				]));
 	});
-var _sam_javner$sam_javner$Page$sbcNavbarView = A3(
-	_sam_javner$sam_javner$Page$customNavbarView,
+var _sam_javner$sam_javner$Page$customView = F5(
+	function (headingHref, headingText, links, headerContent, pageContent) {
+		return A2(
+			_elm_lang$html$Html$div,
+			_elm_lang$core$Native_List.fromArray(
+				[]),
+			_elm_lang$core$Native_List.fromArray(
+				[
+					A3(_sam_javner$sam_javner$Page$navbarView, headingHref, headingText, links),
+					A2(
+					_elm_lang$html$Html$div,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('page-wrapper'),
+							_elm_lang$html$Html_Attributes$style(
+							_elm_lang$core$Native_List.fromArray(
+								[
+									{
+									ctor: '_Tuple2',
+									_0: 'margin-top',
+									_1: A2(
+										_elm_lang$core$Basics_ops['++'],
+										_elm_lang$core$Basics$toString(
+											75 + (_elm_lang$core$List$length(links) * 35)),
+										'px')
+								}
+								]))
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							A2(
+							_elm_lang$html$Html$div,
+							_elm_lang$core$Native_List.fromArray(
+								[
+									_elm_lang$html$Html_Attributes$class('page-header')
+								]),
+							_elm_lang$core$Native_List.fromArray(
+								[
+									A2(
+									_elm_lang$html$Html$div,
+									_elm_lang$core$Native_List.fromArray(
+										[
+											_elm_lang$html$Html_Attributes$class('page-header-wrapper')
+										]),
+									headerContent)
+								])),
+							A2(
+							_elm_lang$html$Html$div,
+							_elm_lang$core$Native_List.fromArray(
+								[
+									_elm_lang$html$Html_Attributes$class('page-content-wrapper')
+								]),
+							_elm_lang$core$Native_List.fromArray(
+								[
+									A2(
+									_elm_lang$html$Html$div,
+									_elm_lang$core$Native_List.fromArray(
+										[
+											_elm_lang$html$Html_Attributes$class('page-content')
+										]),
+									pageContent)
+								]))
+						])),
+					_sam_javner$sam_javner$Page$footerView
+				]));
+	});
+var _sam_javner$sam_javner$Page$sbcView = A3(
+	_sam_javner$sam_javner$Page$customView,
 	'/silverbulletcookbook',
 	'Silver Bullet Cookbook',
 	_elm_lang$core$Native_List.fromArray(
@@ -7397,8 +7463,8 @@ var _sam_javner$sam_javner$Page$sbcNavbarView = A3(
 						]))
 				]))
 		]));
-var _sam_javner$sam_javner$Page$navbarView = A3(
-	_sam_javner$sam_javner$Page$customNavbarView,
+var _sam_javner$sam_javner$Page$view = A3(
+	_sam_javner$sam_javner$Page$customView,
 	'/projects',
 	'Sam Javner',
 	_elm_lang$core$Native_List.fromArray(
@@ -7488,61 +7554,6 @@ var _sam_javner$sam_javner$Page$navbarView = A3(
 						]))
 				]))
 		]));
-var _sam_javner$sam_javner$Page$customView = F3(
-	function (navbar, headerContent, pageContent) {
-		return A2(
-			_elm_lang$html$Html$div,
-			_elm_lang$core$Native_List.fromArray(
-				[]),
-			_elm_lang$core$Native_List.fromArray(
-				[
-					navbar,
-					A2(
-					_elm_lang$html$Html$div,
-					_elm_lang$core$Native_List.fromArray(
-						[
-							_elm_lang$html$Html_Attributes$class('page-wrapper')
-						]),
-					_elm_lang$core$Native_List.fromArray(
-						[
-							A2(
-							_elm_lang$html$Html$div,
-							_elm_lang$core$Native_List.fromArray(
-								[
-									_elm_lang$html$Html_Attributes$class('page-header')
-								]),
-							_elm_lang$core$Native_List.fromArray(
-								[
-									A2(
-									_elm_lang$html$Html$div,
-									_elm_lang$core$Native_List.fromArray(
-										[
-											_elm_lang$html$Html_Attributes$class('page-header-wrapper')
-										]),
-									headerContent)
-								])),
-							A2(
-							_elm_lang$html$Html$div,
-							_elm_lang$core$Native_List.fromArray(
-								[
-									_elm_lang$html$Html_Attributes$class('page-content-wrapper')
-								]),
-							_elm_lang$core$Native_List.fromArray(
-								[
-									A2(
-									_elm_lang$html$Html$div,
-									_elm_lang$core$Native_List.fromArray(
-										[
-											_elm_lang$html$Html_Attributes$class('page-content')
-										]),
-									pageContent)
-								]))
-						])),
-					_sam_javner$sam_javner$Page$footerView
-				]));
-	});
-var _sam_javner$sam_javner$Page$sbcView = _sam_javner$sam_javner$Page$customView(_sam_javner$sam_javner$Page$sbcNavbarView);
-var _sam_javner$sam_javner$Page$view = _sam_javner$sam_javner$Page$customView(_sam_javner$sam_javner$Page$navbarView);
 
 var _sam_javner$sam_javner$Main$features = '\n\n# Download\n\nSilver Bullet Cookbook requires **Windows XP** (Service Pack 3), **Windows Vista** (Service Pack 1), **Windows 7**,\n**Windows 8**, or **Windows 10**. Silver Bullet Cookbook will automatically install the .NET Framework 4.0 Client Profile\non your machine if it is not already installed.\n\n';
 var _sam_javner$sam_javner$Main$featuresView = A2(
