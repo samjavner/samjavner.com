@@ -1,0 +1,159 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    margin: 0 0 60px 0;
+}
+
+h1, h2, h3, h4 {
+    letter-spacing: 0.05em;
+}
+
+.navbar-wrapper {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+}
+
+.page-wrapper {
+    margin: 75px 0 0 0;
+}
+
+.navbar {
+    padding: 20px;
+    background: rgb(40, 40, 42);
+}
+
+.navbar .pure-menu-list {
+    float: right;
+}
+
+.navbar .pure-menu-link {
+    /*color: rgb(210, 210, 210);*/
+    color: rgb(254, 107, 97);
+}
+
+.navbar .pure-menu-link i.fa {
+    /*color: rgb(210, 210, 210);*/
+    color: rgb(254, 107, 97);
+}
+
+.navbar .pure-menu-selected .pure-menu-link {
+    color: rgb(254, 107, 97);
+}
+
+.navbar .pure-menu-selected .pure-menu-link i.fa {
+    color: rgb(254, 107, 97);
+}
+
+.navbar .pure-menu-link:hover {
+    color: rgb(40, 40, 42);
+    background-color: rgb(210, 210, 210);
+}
+
+.navbar .pure-menu-link:hover i.fa {
+    color: rgb(40, 40, 42);
+}
+
+.navbar .pure-menu-heading {
+    color: rgb(120, 210, 210);
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: none;
+    font-variant: small-caps;
+    font-size: 110%;
+}
+
+.page-content-wrapper, .page-header-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.page-header {
+    color: rgb(210, 210, 210);
+    background: rgb(40, 40, 42);
+    padding: 0 0 10px 0px;
+}
+
+.page-header h1 {
+    margin-top: 0px;
+}
+
+.project-type-filters {
+    padding: 20px 0 0 0;
+}
+
+.button-filter-none, .button-filter {
+    margin: 10px;
+}
+
+.pure-button {
+    background: rgb(120, 210, 210);
+    border-radius: 15px;
+}
+
+.pure-button-active {
+    background: rgb(95, 180, 180);
+}
+
+i.fa {
+    margin-right: 10px;
+}
+
+.project-container {
+    margin: 10px 0;
+}
+
+.project-badge {
+    padding: 10px;
+    text-align: center;
+}
+
+.project-badge-content {
+    padding: 10px;
+    border: 1px solid rgb(210, 210, 210);
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px 2px rgb(235, 235, 235);
+}
+
+.project-badge h5 {
+    margin: 0px;
+    padding: 5px;
+    font-weight: normal;
+}
+
+.project-badge a {
+    text-decoration: none;
+    color: rgb(40, 40, 42);
+}
+
+.project-badge-content a:hover {
+    text-decoration: underline;
+    color: rgb(254, 107, 97);
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    padding: 22px;
+    text-align: center;
+    background: rgb(40, 40, 42);
+    color: rgb(210, 210, 210);
+    font-size: 80%;
+}
+
+.content {
+    padding: 20px;
+}
