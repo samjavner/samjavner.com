@@ -7257,7 +7257,7 @@ var _evancz$elm_markdown$Markdown$Options = F4(
 		return {githubFlavored: a, defaultHighlighting: b, sanitize: c, smartypants: d};
 	});
 
-var _sam_javner$sam_javner$Page$footerView = A2(
+var _samjavner$samjavnercom$Page$footerView = A2(
 	_elm_lang$html$Html$div,
 	_elm_lang$core$Native_List.fromArray(
 		[
@@ -7265,9 +7265,46 @@ var _sam_javner$sam_javner$Page$footerView = A2(
 		]),
 	_elm_lang$core$Native_List.fromArray(
 		[
-			_elm_lang$html$Html$text('© 2016 Sam Javner')
+			A2(
+			_elm_lang$html$Html$ul,
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_elm_lang$html$Html_Attributes$class('footer-list')
+				]),
+			_elm_lang$core$Native_List.fromArray(
+				[
+					A2(
+					_elm_lang$html$Html$li,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('footer-li')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text('© 2016 Sam Javner')
+						])),
+					A2(
+					_elm_lang$html$Html$li,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('footer-li')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							A2(
+							_elm_lang$html$Html$a,
+							_elm_lang$core$Native_List.fromArray(
+								[
+									_elm_lang$html$Html_Attributes$href('/about-this-site')
+								]),
+							_elm_lang$core$Native_List.fromArray(
+								[
+									_elm_lang$html$Html$text('About this site')
+								]))
+						]))
+				]))
 		]));
-var _sam_javner$sam_javner$Page$navbarView = F3(
+var _samjavner$samjavnercom$Page$navbarView = F3(
 	function (headingHref, headingText, links) {
 		return A2(
 			_elm_lang$html$Html$div,
@@ -7306,7 +7343,7 @@ var _sam_javner$sam_javner$Page$navbarView = F3(
 						]))
 				]));
 	});
-var _sam_javner$sam_javner$Page$customView = F5(
+var _samjavner$samjavnercom$Page$customView = F5(
 	function (headingHref, headingText, links, headerContent, pageContent) {
 		return A2(
 			_elm_lang$html$Html$div,
@@ -7314,7 +7351,7 @@ var _sam_javner$sam_javner$Page$customView = F5(
 				[]),
 			_elm_lang$core$Native_List.fromArray(
 				[
-					A3(_sam_javner$sam_javner$Page$navbarView, headingHref, headingText, links),
+					A3(_samjavner$samjavnercom$Page$navbarView, headingHref, headingText, links),
 					A2(
 					_elm_lang$html$Html$div,
 					_elm_lang$core$Native_List.fromArray(
@@ -7356,11 +7393,11 @@ var _sam_javner$sam_javner$Page$customView = F5(
 									pageContent)
 								]))
 						])),
-					_sam_javner$sam_javner$Page$footerView
+					_samjavner$samjavnercom$Page$footerView
 				]));
 	});
-var _sam_javner$sam_javner$Page$sbcView = A3(
-	_sam_javner$sam_javner$Page$customView,
+var _samjavner$samjavnercom$Page$sbcView = A3(
+	_samjavner$samjavnercom$Page$customView,
 	'/silverbulletcookbook',
 	'Silver Bullet Cookbook',
 	_elm_lang$core$Native_List.fromArray(
@@ -7434,7 +7471,7 @@ var _sam_javner$sam_javner$Page$sbcView = A3(
 					_elm_lang$core$Native_List.fromArray(
 						[
 							_elm_lang$html$Html_Attributes$class('pure-menu-link'),
-							_elm_lang$html$Html_Attributes$href('/projects')
+							_elm_lang$html$Html_Attributes$href('/')
 						]),
 					_elm_lang$core$Native_List.fromArray(
 						[
@@ -7450,9 +7487,9 @@ var _sam_javner$sam_javner$Page$sbcView = A3(
 						]))
 				]))
 		]));
-var _sam_javner$sam_javner$Page$view = A3(
-	_sam_javner$sam_javner$Page$customView,
-	'/projects',
+var _samjavner$samjavnercom$Page$view = A3(
+	_samjavner$samjavnercom$Page$customView,
+	'/',
 	'Sam Javner',
 	_elm_lang$core$Native_List.fromArray(
 		[
@@ -7542,15 +7579,15 @@ var _sam_javner$sam_javner$Page$view = A3(
 				]))
 		]));
 
-var _sam_javner$sam_javner$Main$features = '\n\n# Silver Bullet Cookbook\n\n*Silver Bullet Cookbook* is the easiest way to **organize** and **print recipes** and **plan meals**. With other recipe\nsoftware typing and editing recipes can feel like a chore, but *Silver Bullet Cookbook*\'s **simple** and **straightforward**\nrecipe editnig screen makes entering recipes a breeze. *Silver Bullet Cookbook* makes it easy to add a splash of **color**\nand **style** to your recipes - both while viewing and printing your recipes, and unlike some other software\n*Silver Bullet Cookbook* shows you **thumbnails** of all your beautiful recipe **photos**. And with the handy Meal Planner\nalways at your fingertips, planning meals has never been easier!\n\n# Manage Recipes\n\n*Silver Bullet Cookbook* shows you a list of your recipes with thumbnails side-by-side with the recipe text and photos.\nUse the **search** feature to find recipes by category, source, text, or ingredients. Easily perform a search with multiple\ncriteria. Mark recipes as recipes you want to **try soon**, recipes you have **prepared**, or recipes that are **favorites**.\nThese icons show up next to your recipes in the recipe list, and you can use the search feature to quickly and easily\nfind those recipes.\n\n# Plan Meals\n\nAdd recipes to the calendar with **one click**! View and plan meals for an entire **week at a time**.\n\n# Add and Edit Recipes\n\nWith other recipe software typing in ingredients can feel like working with a spreadsheet and you may find yourself\nswitching between dozens of tabs to find where to enter your recipe details. With *Silver Bullet Cookbook* the **Recipe**\ntab makes it easy to type in the recipe name, description, ingredients, directions, variations, and notes. The\n**Details** tab allows you to enter the recipe details: cookbook, source, author, website, web address, servings,\nyield, times, and categories. The **Photos** tab allows you to add and arrange beautiful photos of your recipe.\nFinally, the **Capture** tab makes it easy add recipes from the Internet or other documents.\n\n# Categorize Recipes\n\nCategorize your recipes by **course**, **dish**, **cuisine**, **dietary consideration**, **equipment**, **technique**,\n**occasion**, or other categories such as \"**make ahead**,\" \"**one dish**,\" and \"**quick and easy**.\" Later, you can\nsearch for your recipes by category. Rather than displaying all your categories in one very long list,\n*Silver Bullet Cookbook* breaks down your categories into sub-categories. When you search for recipes in a category,\n*Silver Bullet Cookbook* is **smart** enough to display recipes from all the sub-categories. For example, a search\nfor desserts will find recipes categorized as cake, cookie, or pie. A search for European recipes will find recipes\ncategorized as French, Italian, or Greek. You can also add your own custom user categories.\n\n# Print Recipes\n\nPrint recipes to **any size paper** supported by your printer, including index cards. The **preview** shows you exactly\nwhat your recipe will look like printed and lets you adjust page margins and decide which recipe elements to print.\nUse any of the color schemes or styles included with *Silver Bullet Cookbook* or create your own in order to\n**personalize** your printed recipes.\n\n# Import Recipes\n\nImport recipes that have been saved to either the Meal-Master (.mmf) or MasterCook (.mx2) format by other recipe software.\nLarge collection of recipes? No problem! *Silver Bullet Cookbook*\'s recipe import is **fast** and **powerful** enough that\nit can store more than 100,000 recipes while still being able to quickly search for that perfect recipe. The only limits\nare the amount of storage and memory on your computer.\n\n# Customize\n\nUse **color schemes** and **styles** to customize the recipe display. Use larger fonts when you want to see from across\nthe room and smaller fonts to fit your recipe onto an index card perfectly. Add a splash of color to your printed recipes\n or easily display your recipes with a high-contrast color scheme.\n\nYou can easily set up *Silver Bullet Cookbook* to display **ingredient units** (cups, tablespoons, etc.) in full or using\nabbreviations (c., T., tbsp., etc.) of your choosing. You can also customize the display of **times** (\"2 hours 5 minutes\"\nor \"2 hr 5 min\" or \"2:05\").\n\n';
-var _sam_javner$sam_javner$Main$featuresView = A2(
+var _samjavner$samjavnercom$Main$features = '\n\n# Silver Bullet Cookbook\n\n*Silver Bullet Cookbook* is the easiest way to **organize** and **print recipes** and **plan meals**. With other recipe\nsoftware typing and editing recipes can feel like a chore, but *Silver Bullet Cookbook*\'s **simple** and **straightforward**\nrecipe editnig screen makes entering recipes a breeze. *Silver Bullet Cookbook* makes it easy to add a splash of **color**\nand **style** to your recipes - both while viewing and printing your recipes, and unlike some other software\n*Silver Bullet Cookbook* shows you **thumbnails** of all your beautiful recipe **photos**. And with the handy Meal Planner\nalways at your fingertips, planning meals has never been easier!\n\n# Manage Recipes\n\n*Silver Bullet Cookbook* shows you a list of your recipes with thumbnails side-by-side with the recipe text and photos.\nUse the **search** feature to find recipes by category, source, text, or ingredients. Easily perform a search with multiple\ncriteria. Mark recipes as recipes you want to **try soon**, recipes you have **prepared**, or recipes that are **favorites**.\nThese icons show up next to your recipes in the recipe list, and you can use the search feature to quickly and easily\nfind those recipes.\n\n# Plan Meals\n\nAdd recipes to the calendar with **one click**! View and plan meals for an entire **week at a time**.\n\n# Add and Edit Recipes\n\nWith other recipe software typing in ingredients can feel like working with a spreadsheet and you may find yourself\nswitching between dozens of tabs to find where to enter your recipe details. With *Silver Bullet Cookbook* the **Recipe**\ntab makes it easy to type in the recipe name, description, ingredients, directions, variations, and notes. The\n**Details** tab allows you to enter the recipe details: cookbook, source, author, website, web address, servings,\nyield, times, and categories. The **Photos** tab allows you to add and arrange beautiful photos of your recipe.\nFinally, the **Capture** tab makes it easy add recipes from the Internet or other documents.\n\n# Categorize Recipes\n\nCategorize your recipes by **course**, **dish**, **cuisine**, **dietary consideration**, **equipment**, **technique**,\n**occasion**, or other categories such as \"**make ahead**,\" \"**one dish**,\" and \"**quick and easy**.\" Later, you can\nsearch for your recipes by category. Rather than displaying all your categories in one very long list,\n*Silver Bullet Cookbook* breaks down your categories into sub-categories. When you search for recipes in a category,\n*Silver Bullet Cookbook* is **smart** enough to display recipes from all the sub-categories. For example, a search\nfor desserts will find recipes categorized as cake, cookie, or pie. A search for European recipes will find recipes\ncategorized as French, Italian, or Greek. You can also add your own custom user categories.\n\n# Print Recipes\n\nPrint recipes to **any size paper** supported by your printer, including index cards. The **preview** shows you exactly\nwhat your recipe will look like printed and lets you adjust page margins and decide which recipe elements to print.\nUse any of the color schemes or styles included with *Silver Bullet Cookbook* or create your own in order to\n**personalize** your printed recipes.\n\n# Import Recipes\n\nImport recipes that have been saved to either the Meal-Master (.mmf) or MasterCook (.mx2) format by other recipe software.\nLarge collection of recipes? No problem! *Silver Bullet Cookbook*\'s recipe import is **fast** and **powerful** enough that\nit can store more than 100,000 recipes while still being able to quickly search for that perfect recipe. The only limits\nare the amount of storage and memory on your computer.\n\n# Customize\n\nUse **color schemes** and **styles** to customize the recipe display. Use larger fonts when you want to see from across\nthe room and smaller fonts to fit your recipe onto an index card perfectly. Add a splash of color to your printed recipes\n or easily display your recipes with a high-contrast color scheme.\n\nYou can easily set up *Silver Bullet Cookbook* to display **ingredient units** (cups, tablespoons, etc.) in full or using\nabbreviations (c., T., tbsp., etc.) of your choosing. You can also customize the display of **times** (\"2 hours 5 minutes\"\nor \"2 hr 5 min\" or \"2:05\").\n\n';
+var _samjavner$samjavnercom$Main$featuresView = A2(
 	_evancz$elm_markdown$Markdown$toHtml,
 	_elm_lang$core$Native_List.fromArray(
 		[]),
-	_sam_javner$sam_javner$Main$features);
-var _sam_javner$sam_javner$Main$view = function (model) {
+	_samjavner$samjavnercom$Main$features);
+var _samjavner$samjavnercom$Main$view = function (model) {
 	return A2(
-		_sam_javner$sam_javner$Page$sbcView,
+		_samjavner$samjavnercom$Page$sbcView,
 		_elm_lang$core$Native_List.fromArray(
 			[
 				A2(
@@ -7584,23 +7621,23 @@ var _sam_javner$sam_javner$Main$view = function (model) {
 					]))
 			]),
 		_elm_lang$core$Native_List.fromArray(
-			[_sam_javner$sam_javner$Main$featuresView]));
+			[_samjavner$samjavnercom$Main$featuresView]));
 };
-var _sam_javner$sam_javner$Main$update = F2(
+var _samjavner$samjavnercom$Main$update = F2(
 	function (msg, model) {
 		return model;
 	});
-var _sam_javner$sam_javner$Main$init = {};
-var _sam_javner$sam_javner$Main$main = {
+var _samjavner$samjavnercom$Main$init = {};
+var _samjavner$samjavnercom$Main$main = {
 	main: _elm_lang$html$Html_App$beginnerProgram(
-		{model: _sam_javner$sam_javner$Main$init, update: _sam_javner$sam_javner$Main$update, view: _sam_javner$sam_javner$Main$view})
+		{model: _samjavner$samjavnercom$Main$init, update: _samjavner$samjavnercom$Main$update, view: _samjavner$samjavnercom$Main$view})
 };
-var _sam_javner$sam_javner$Main$Model = {};
-var _sam_javner$sam_javner$Main$Pass = {ctor: 'Pass'};
+var _samjavner$samjavnercom$Main$Model = {};
+var _samjavner$samjavnercom$Main$Pass = {ctor: 'Pass'};
 
 var Elm = {};
 Elm['Main'] = Elm['Main'] || {};
-_elm_lang$core$Native_Platform.addPublicModule(Elm['Main'], 'Main', typeof _sam_javner$sam_javner$Main$main === 'undefined' ? null : _sam_javner$sam_javner$Main$main);
+_elm_lang$core$Native_Platform.addPublicModule(Elm['Main'], 'Main', typeof _samjavner$samjavnercom$Main$main === 'undefined' ? null : _samjavner$samjavnercom$Main$main);
 
 if (typeof define === "function" && define['amd'])
 {

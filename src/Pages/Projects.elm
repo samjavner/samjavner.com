@@ -135,8 +135,10 @@ update msg model =
 view : Model -> Html Msg
 view model =
   Page.view
-    [ h1 [] [ text "Projects" ]
-    , p [] [ text "Here are some of the projects I have spent time on over the years." ]
+    [ div [ style [ ("text-align", "center") ] ]
+      [ h1 [] [ text "Projects" ]
+      , p [] [ text "Here are some of the projects I have spent time on over the years." ]
+      ]
     ]
     [ projectTypesView model
     , projectsView model

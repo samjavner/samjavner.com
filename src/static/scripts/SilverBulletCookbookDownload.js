@@ -7257,7 +7257,7 @@ var _evancz$elm_markdown$Markdown$Options = F4(
 		return {githubFlavored: a, defaultHighlighting: b, sanitize: c, smartypants: d};
 	});
 
-var _sam_javner$sam_javner$Page$footerView = A2(
+var _samjavner$samjavnercom$Page$footerView = A2(
 	_elm_lang$html$Html$div,
 	_elm_lang$core$Native_List.fromArray(
 		[
@@ -7265,9 +7265,46 @@ var _sam_javner$sam_javner$Page$footerView = A2(
 		]),
 	_elm_lang$core$Native_List.fromArray(
 		[
-			_elm_lang$html$Html$text('© 2016 Sam Javner')
+			A2(
+			_elm_lang$html$Html$ul,
+			_elm_lang$core$Native_List.fromArray(
+				[
+					_elm_lang$html$Html_Attributes$class('footer-list')
+				]),
+			_elm_lang$core$Native_List.fromArray(
+				[
+					A2(
+					_elm_lang$html$Html$li,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('footer-li')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html$text('© 2016 Sam Javner')
+						])),
+					A2(
+					_elm_lang$html$Html$li,
+					_elm_lang$core$Native_List.fromArray(
+						[
+							_elm_lang$html$Html_Attributes$class('footer-li')
+						]),
+					_elm_lang$core$Native_List.fromArray(
+						[
+							A2(
+							_elm_lang$html$Html$a,
+							_elm_lang$core$Native_List.fromArray(
+								[
+									_elm_lang$html$Html_Attributes$href('/about-this-site')
+								]),
+							_elm_lang$core$Native_List.fromArray(
+								[
+									_elm_lang$html$Html$text('About this site')
+								]))
+						]))
+				]))
 		]));
-var _sam_javner$sam_javner$Page$navbarView = F3(
+var _samjavner$samjavnercom$Page$navbarView = F3(
 	function (headingHref, headingText, links) {
 		return A2(
 			_elm_lang$html$Html$div,
@@ -7306,7 +7343,7 @@ var _sam_javner$sam_javner$Page$navbarView = F3(
 						]))
 				]));
 	});
-var _sam_javner$sam_javner$Page$customView = F5(
+var _samjavner$samjavnercom$Page$customView = F5(
 	function (headingHref, headingText, links, headerContent, pageContent) {
 		return A2(
 			_elm_lang$html$Html$div,
@@ -7314,7 +7351,7 @@ var _sam_javner$sam_javner$Page$customView = F5(
 				[]),
 			_elm_lang$core$Native_List.fromArray(
 				[
-					A3(_sam_javner$sam_javner$Page$navbarView, headingHref, headingText, links),
+					A3(_samjavner$samjavnercom$Page$navbarView, headingHref, headingText, links),
 					A2(
 					_elm_lang$html$Html$div,
 					_elm_lang$core$Native_List.fromArray(
@@ -7356,11 +7393,11 @@ var _sam_javner$sam_javner$Page$customView = F5(
 									pageContent)
 								]))
 						])),
-					_sam_javner$sam_javner$Page$footerView
+					_samjavner$samjavnercom$Page$footerView
 				]));
 	});
-var _sam_javner$sam_javner$Page$sbcView = A3(
-	_sam_javner$sam_javner$Page$customView,
+var _samjavner$samjavnercom$Page$sbcView = A3(
+	_samjavner$samjavnercom$Page$customView,
 	'/silverbulletcookbook',
 	'Silver Bullet Cookbook',
 	_elm_lang$core$Native_List.fromArray(
@@ -7434,7 +7471,7 @@ var _sam_javner$sam_javner$Page$sbcView = A3(
 					_elm_lang$core$Native_List.fromArray(
 						[
 							_elm_lang$html$Html_Attributes$class('pure-menu-link'),
-							_elm_lang$html$Html_Attributes$href('/projects')
+							_elm_lang$html$Html_Attributes$href('/')
 						]),
 					_elm_lang$core$Native_List.fromArray(
 						[
@@ -7450,9 +7487,9 @@ var _sam_javner$sam_javner$Page$sbcView = A3(
 						]))
 				]))
 		]));
-var _sam_javner$sam_javner$Page$view = A3(
-	_sam_javner$sam_javner$Page$customView,
-	'/projects',
+var _samjavner$samjavnercom$Page$view = A3(
+	_samjavner$samjavnercom$Page$customView,
+	'/',
 	'Sam Javner',
 	_elm_lang$core$Native_List.fromArray(
 		[
@@ -7542,15 +7579,15 @@ var _sam_javner$sam_javner$Page$view = A3(
 				]))
 		]));
 
-var _sam_javner$sam_javner$Main$features = '\n\n# Download\n\nSilver Bullet Cookbook requires **Windows XP** (Service Pack 3), **Windows Vista** (Service Pack 1), **Windows 7**,\n**Windows 8**, or **Windows 10**. Silver Bullet Cookbook will automatically install the .NET Framework 4.0 Client Profile\non your machine if it is not already installed.\n\n';
-var _sam_javner$sam_javner$Main$featuresView = A2(
+var _samjavner$samjavnercom$Main$features = '\n\n# Download\n\nSilver Bullet Cookbook requires **Windows XP** (Service Pack 3), **Windows Vista** (Service Pack 1), **Windows 7**,\n**Windows 8**, or **Windows 10**. Silver Bullet Cookbook will automatically install the .NET Framework 4.0 Client Profile\non your machine if it is not already installed.\n\n';
+var _samjavner$samjavnercom$Main$featuresView = A2(
 	_evancz$elm_markdown$Markdown$toHtml,
 	_elm_lang$core$Native_List.fromArray(
 		[]),
-	_sam_javner$sam_javner$Main$features);
-var _sam_javner$sam_javner$Main$view = function (model) {
+	_samjavner$samjavnercom$Main$features);
+var _samjavner$samjavnercom$Main$view = function (model) {
 	return A2(
-		_sam_javner$sam_javner$Page$sbcView,
+		_samjavner$samjavnercom$Page$sbcView,
 		_elm_lang$core$Native_List.fromArray(
 			[
 				A2(
@@ -7585,7 +7622,7 @@ var _sam_javner$sam_javner$Main$view = function (model) {
 			]),
 		_elm_lang$core$Native_List.fromArray(
 			[
-				_sam_javner$sam_javner$Main$featuresView,
+				_samjavner$samjavnercom$Main$featuresView,
 				A2(
 				_elm_lang$html$Html$a,
 				_elm_lang$core$Native_List.fromArray(
@@ -7599,21 +7636,21 @@ var _sam_javner$sam_javner$Main$view = function (model) {
 					]))
 			]));
 };
-var _sam_javner$sam_javner$Main$update = F2(
+var _samjavner$samjavnercom$Main$update = F2(
 	function (msg, model) {
 		return model;
 	});
-var _sam_javner$sam_javner$Main$init = {};
-var _sam_javner$sam_javner$Main$main = {
+var _samjavner$samjavnercom$Main$init = {};
+var _samjavner$samjavnercom$Main$main = {
 	main: _elm_lang$html$Html_App$beginnerProgram(
-		{model: _sam_javner$sam_javner$Main$init, update: _sam_javner$sam_javner$Main$update, view: _sam_javner$sam_javner$Main$view})
+		{model: _samjavner$samjavnercom$Main$init, update: _samjavner$samjavnercom$Main$update, view: _samjavner$samjavnercom$Main$view})
 };
-var _sam_javner$sam_javner$Main$Model = {};
-var _sam_javner$sam_javner$Main$Pass = {ctor: 'Pass'};
+var _samjavner$samjavnercom$Main$Model = {};
+var _samjavner$samjavnercom$Main$Pass = {ctor: 'Pass'};
 
 var Elm = {};
 Elm['Main'] = Elm['Main'] || {};
-_elm_lang$core$Native_Platform.addPublicModule(Elm['Main'], 'Main', typeof _sam_javner$sam_javner$Main$main === 'undefined' ? null : _sam_javner$sam_javner$Main$main);
+_elm_lang$core$Native_Platform.addPublicModule(Elm['Main'], 'Main', typeof _samjavner$samjavnercom$Main$main === 'undefined' ? null : _samjavner$samjavnercom$Main$main);
 
 if (typeof define === "function" && define['amd'])
 {

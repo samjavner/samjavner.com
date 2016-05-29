@@ -27,6 +27,18 @@ class BaseHandler(webapp2.RequestHandler):
         self.response.write(template.render(template_values))
 
 
+class Home(BaseHandler):
+
+    def get(self):
+        self.render_template('Home')
+
+
+class AboutThisSite(BaseHandler):
+
+    def get(self):
+        self.render_template('AboutThisSite')
+
+
 class Projects(BaseHandler):
     
     def get(self):
@@ -46,7 +58,8 @@ class SilverBulletCookbookDownload(BaseHandler):
 
 
 app = WSGIApplication([
-    RedirectRoute('/', redirect_to_name='Projects'),
+    RedirectRoute('/', Home, name='Home'),
+    RedirectRoute('/about-this-site', AboutThisSite, name='AboutThisSite'),
     Route('/projects/', Projects, name='Projects'),
     RedirectRoute('/projects', redirect_to_name='Projects'),
     Route('/silverbulletcookbook/', SilverBulletCookbook, name='SilverBulletCookbook'),

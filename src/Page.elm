@@ -10,7 +10,7 @@ import Html.Attributes exposing (..)
 
 view : List (Html a) -> List (Html a) -> Html a
 view =
-  customView "/projects" "Sam Javner"
+  customView "/" "Sam Javner"
     [ li [ class "pure-menu-item pure-menu-selected" ]
       [ a [ class "pure-menu-link", href "/projects" ] [ i [ class "fa fa-folder-open" ] [], text "Projects" ] ]
     , li [ class "pure-menu-item" ]
@@ -28,7 +28,7 @@ sbcView =
     , li [ class "pure-menu-item" ]
       [ a [ class "pure-menu-link", href "http://pinterest.com/sbcookbook/" ] [ i [ class "fa fa-pinterest" ] [], text "Pinterest" ] ]
     , li [ class "pure-menu-item" ]
-      [ a [ class "pure-menu-link", href "/projects" ] [ i [ class "fa fa-folder-open" ] [], text "Sam Javner" ] ]
+      [ a [ class "pure-menu-link", href "/" ] [ i [ class "fa fa-folder-open" ] [], text "Sam Javner" ] ]
     ]
 
 
@@ -65,5 +65,8 @@ navbarView headingHref headingText links =
 footerView : Html a
 footerView =
   div [ class "footer" ]
-    [ text "© 2016 Sam Javner"
+    [ ul [ class "footer-list" ]
+      [ li [ class "footer-li" ] [ text "© 2016 Sam Javner" ]
+      , li [ class "footer-li" ] [ a [ href "/about-this-site" ] [ text "About this site" ] ]
+      ]
     ]
