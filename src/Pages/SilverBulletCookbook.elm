@@ -56,7 +56,7 @@ features = """
 
 *Silver Bullet Cookbook* is the easiest way to **organize** and **print recipes** and **plan meals**. With other recipe
 software typing and editing recipes can feel like a chore, but *Silver Bullet Cookbook*'s **simple** and **straightforward**
-recipe editng screen makes entering recipes a breeze. *Silver Bullet Cookbook* makes it easy to add a splash of **color**
+recipe editnig screen makes entering recipes a breeze. *Silver Bullet Cookbook* makes it easy to add a splash of **color**
 and **style** to your recipes - both while viewing and printing your recipes, and unlike some other software
 *Silver Bullet Cookbook* shows you **thumbnails** of all your beautiful recipe **photos**. And with the handy Meal Planner
 always at your fingertips, planning meals has never been easier!
