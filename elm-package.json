@@ -1,7 +1,7 @@
 {
     "version": "1.0.0",
     "summary": "My personal website, found at SamJavner.com",
-    "repository": "https://github.com/sam-javner/sam-javner.git",
+    "repository": "https://github.com/samjavner/samjavner.com.git",
     "license": "MIT",
     "source-directories": [
         "src"
