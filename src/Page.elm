@@ -36,7 +36,7 @@ customView : String -> String -> List (Html a) -> List (Html a) -> List (Html a)
 customView headingHref headingText links headerContent pageContent =
   div []
     [ navbarView headingHref headingText links
-    , div [ class "page-wrapper", style [ ( "margin-top", (toString (75 + ((List.length links) * 35))) ++ "px" ) ] ]
+    , div [ class "page-wrapper" ]
       [ div [ class "page-header" ]
         [ div [ class "page-header-wrapper" ]
           headerContent

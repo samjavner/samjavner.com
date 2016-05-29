@@ -79,6 +79,12 @@ img {
 }
 
 @media screen and (max-width: 760px) {
+    .navbar-wrapper {
+        position: relative;
+    }
+    .page-wrapper {
+        margin-top: 0px;
+    }
     .navbar .pure-menu-heading {
         display: block;
     }
@@ -95,12 +101,6 @@ img {
     }
     .navbar .pure-menu-item .pure-menu-link {
         height: 35px;
-    }
-}
-
-@media screen and (min-width: 760px) {
-    .page-wrapper {
-        margin-top: 75px !important;
     }
 }
 

@@ -7319,20 +7319,7 @@ var _sam_javner$sam_javner$Page$customView = F5(
 					_elm_lang$html$Html$div,
 					_elm_lang$core$Native_List.fromArray(
 						[
-							_elm_lang$html$Html_Attributes$class('page-wrapper'),
-							_elm_lang$html$Html_Attributes$style(
-							_elm_lang$core$Native_List.fromArray(
-								[
-									{
-									ctor: '_Tuple2',
-									_0: 'margin-top',
-									_1: A2(
-										_elm_lang$core$Basics_ops['++'],
-										_elm_lang$core$Basics$toString(
-											75 + (_elm_lang$core$List$length(links) * 35)),
-										'px')
-								}
-								]))
+							_elm_lang$html$Html_Attributes$class('page-wrapper')
 						]),
 					_elm_lang$core$Native_List.fromArray(
 						[
