@@ -28,8 +28,8 @@ type ProjectType
   | Html5
   | Python
   | SQLite
+  | UniversalWindows
   | VBNet
-  | WindowsPhone
   | Wpf
   | Xaml
 
@@ -58,12 +58,12 @@ projectTypeString projectType =
     SQLite ->
       "SQLite"
     
+    UniversalWindows ->
+      "Universal Windows"
+    
     VBNet ->
       "VB.NET"
-    
-    WindowsPhone ->
-      "Windows Phone"
-    
+        
     Wpf ->
       "WPF"
       
@@ -88,7 +88,7 @@ init =
 
 projectTypes : List ProjectType
 projectTypes =
-  [ DotNet, CSharp, Css, ElmLang, Html5, Python, SQLite, VBNet, WindowsPhone, Wpf, Xaml ]
+  [ DotNet, CSharp, Css, ElmLang, Html5, Python, SQLite, UniversalWindows, VBNet, Wpf, Xaml ]
 
 
 projects : List Project
@@ -98,20 +98,15 @@ projects =
     , url = "/silverbulletcookbook/"
     , imageUrl = "silver-bullet-cookbook.png"
     }
-  , { name = "Recipe Viewer"
-    , projectTypes = [ CSharp, DotNet, WindowsPhone, Xaml ]
-    , url = "http://www.windowsphone.com/en-us/store/app/recipe-viewer/388e503e-8c58-46aa-a028-5057715364f5"
-    , imageUrl = "recipe-viewer.png"
-    }
-  , { name = "Voice Unit Converter"
-    , projectTypes = [ CSharp, DotNet, WindowsPhone, Xaml ]
-    , url = "http://www.windowsphone.com/en-us/store/app/voice-unit-converter/ccf01b22-8de5-4ca9-9fc9-a3b00732711c"
-    , imageUrl = "voice-unit-converter.png"
-    }
   , { name = "SamJavner.com"
     , projectTypes = [ Html5, Css, ElmLang ]
-    , url = "http://www.samjavner.com"
+    , url = "https://github.com/samjavner/samjavner.com"
     , imageUrl = "sam-javner.png"
+    }
+  , { name = "Voice Unit Converter"
+    , projectTypes = [ CSharp, DotNet, UniversalWindows, Xaml ]
+    , url = "https://github.com/samjavner/voice-unit-converter"
+    , imageUrl = "voice-unit-converter.png"
     }
   , { name = "Recipe Formats"
     , projectTypes = [ Python ]
