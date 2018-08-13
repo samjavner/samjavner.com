@@ -1,5 +1,4 @@
 import Html exposing (..)
-import Html.App as App
 import Html.Attributes exposing (..)
 import Html.Events exposing (on, onClick, targetValue)
 
@@ -7,9 +6,9 @@ import Html.Events exposing (on, onClick, targetValue)
 import Page
 
 
-main : Program Never
+main : Program Never Model Msg
 main =
-  App.beginnerProgram { model = init, update = update, view = view }
+  beginnerProgram { model = init, update = update, view = view }
 
 
 type alias Project =

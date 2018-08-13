@@ -66,7 +66,7 @@ footerView : Html a
 footerView =
   div [ class "footer" ]
     [ ul [ class "footer-list" ]
-      [ li [ class "footer-li" ] [ text "© 2016 Sam Javner" ]
+      [ li [ class "footer-li" ] [ text "© 2018 Sam Javner" ]
       , li [ class "footer-li" ] [ a [ href "/about-this-site" ] [ text "About this site" ] ]
       ]
     ]

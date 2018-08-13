@@ -1,5 +1,4 @@
 import Html exposing (..)
-import Html.App as App
 import Html.Attributes exposing (..)
 import Markdown
 
@@ -7,9 +6,9 @@ import Markdown
 import Page
 
 
-main : Program Never
+main : Program Never Model Msg
 main =
-  App.beginnerProgram { model = init, update = update, view = view }
+  beginnerProgram { model = init, update = update, view = view }
 
 
 type alias Model =
@@ -50,10 +49,8 @@ homeText = """
 
 ![photograph of me](/static/me.jpg)
 
-During the day you will find me at MSI Data in Mequon, WI building web applications
-and APIs using JavaScript, C#, and SQL Server. I enjoy trying to make software
-simpler, more maintanable, and more usable. I am happy when I am learning new things,
-building new things, and teaching others.
+I enjoy making software simpler, more maintanable, and more usable. I am happy
+when I am learning new things, building new things, and teaching others.
 
 Aside from software development I love cooking, listening to music, reading
 nonfiction, playing games, and spending time outdoors.
